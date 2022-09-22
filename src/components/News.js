@@ -30,9 +30,8 @@ export default function News (props) {
     
     
     useEffect(() => {
-        document.title = props.category + '-NewsAwesome'
+        document.title = `${props.category} - NewsAwesome`; 
         updatePage();
-        ;
         // eslint-disable-next-line
     }, [])
     
