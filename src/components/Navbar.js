@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="fixed-top navbar navbar-expand-lg bg-dark">
           <div className="container-fluid">
             <Link className="navbar-brand">
-              NEWSAwesomeee
+              NEWSAwesomee
             </Link>
             <button
               className="navbar-toggler"

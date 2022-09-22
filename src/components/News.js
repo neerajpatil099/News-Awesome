@@ -30,10 +30,10 @@ export default function News (props) {
     
     
     useEffect(() => {
-      document.title = props.category + '-NewsAwesomeeee'
-      updatePage();
-      // eslint-disable-next-line
+        document.title = props.category + '-NewsAwesome'
+        updatePage();
         ;
+        // eslint-disable-next-line
     }, [])
     
 
@@ -43,13 +43,13 @@ export default function News (props) {
       let data = await fetch(url);
       let parsedData = await data.json()
       setArticles(articles.concat(parsedData.articles))
-      setTotalResults(parsedData.totalResults)
+      setTotalResults(parsedData.totalResults);
     };
 
 
     return (
             <>
-                <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '90px' }}>NewsMonkey - Top {props.category} Headlines</h1>
+                <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '90px' }}>NewsAwesome - Top {props.category} Headlines</h1>
                 {loading && <Spinner />}
                 <InfiniteScroll
                     dataLength={articles.length}

@@ -18,7 +18,8 @@ export default function App (){
       <Router>
       <Navbar />
       <LoadingBar
-        color='#f11946'
+        height='4px'
+        color='#99f5e0'
         progress={progress}
       />
       <Routes>
